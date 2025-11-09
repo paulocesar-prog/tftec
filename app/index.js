@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send('Olá! Esta é uma aplicação Node.js para simulação do ambiente de Produção.');
+    res.send('Olá! Esta é uma aplicação Node.js para simulação do ambiente de Produção V1.1.');
 });
 
 app.listen(port, () => {
