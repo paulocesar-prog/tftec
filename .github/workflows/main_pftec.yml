@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - pftec
 on:
   push:
     branches:
-      - main
+      - staging
   workflow_dispatch:
 
 jobs:
@@ -62,5 +62,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'pftec'
-          slot-name: 'Production'
+          slot-name: 'pftec-staging'
           package: ./app
